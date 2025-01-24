@@ -7,7 +7,7 @@
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "d4w": "http://data4wallonia.com/model/",
+    "d4w": "http://data4wallonia.com/resource/model/",
     "d4wta": "http://data4wallonia.com/resource/taxonomy/",
     "ex": "http://example.com/",
     "eurovoc": "http://publications.europa.eu/ontology/euvoc#",
@@ -86,7 +86,20 @@
     {
       "@id": "ex:ambition-PT2sGEpR2WL6gF914UZJ1",
       "@type": "Ambition",
-      "d4w:title": "Innovation numérique"
+      "d4w:logo": {
+        "@id": "ex:logo-6g677yu7zTnGqOnYXfZoyy"
+      },
+      "d4w:referencePost": {
+        "@id": "ex:post-7H1A4Hkjv8Fs0BG5cp1L5O"
+      },
+      "d4w:slug": {
+        "@language": "fr",
+        "@value": "innovation-numerique"
+      },
+      "d4w:title": {
+        "@language": "fr",
+        "@value": "Innovation numérique"
+      }
     },
     {
       "@id": "ex:event-4CCTPChHyptq3bDJSNlYrj",
@@ -162,6 +175,17 @@
       }
     },
     {
+      "@id": "ex:logo-6g677yu7zTnGqOnYXfZoyy",
+      "@type": "Asset",
+      "d4w:file": {
+        "@id": "https://images.ctfassets.net/myqv2p4gx62v/6g677yu7zTnGqOnYXfZoyy/995d8e82828205a3899caeb3e579cc42/Picto_InnovationNumerique.svg"
+      },
+      "d4w:title": {
+        "@language": "fr",
+        "@value": "Picto Innovation Numerique"
+      }
+    },
+    {
       "@id": "ex:organizer-3LBb2yyZuH9kU4k4FFt5lY",
       "@type": "Profile",
       "d4w:belgianEntreprise": "Ministère de la Communauté française",
@@ -220,6 +244,45 @@
       "d4w:website": "https://www.parlement-wallonie.be/"
     },
     {
+      "@id": "ex:person-74ievn1aScz6OxdfHoU9KE",
+      "@type": "Person",
+      "d4w:displayRefusal": {
+        "@type": "xsd:boolean",
+        "@value": "0"
+      },
+      "d4w:featuredEmail": "rene.magritte@cfb.be",
+      "d4w:firstName": "René François Ghislain",
+      "d4w:internalName": "René François Ghislain Magritte",
+      "d4w:language": "French",
+      "d4w:lastName": "Magritte",
+      "d4w:slug": "rene-magritte"
+    },
+    {
+      "@id": "ex:post-7H1A4Hkjv8Fs0BG5cp1L5O",
+      "@type": "Post",
+      "d4w:content": {
+        "@language": "fr",
+        "@value": "La Wallonie doit s’appuyer sur un réseau d’entreprises du numérique hautement innovantes, notamment en renforçant la spécialisation du secteur du numérique dans des écosystèmes forts et en le spécialisant dans les chaînes de valeur stratégiques européennes. L’ambition du secteur du numérique doit être européenne, au travers de nos leaders technologiques, des startups à fort potentiel, de nos centres de recherche et du réseau des hubs internationaux. Enfin, le développement du secteur du numérique doit favoriser une économie plus résiliente face aux crises et intégrer les opportunités économiques de la transition verte et de l’économie circulaire."
+      },
+      "d4w:introduction": {
+        "@language": "fr",
+        "@value": "Développer notre excellence technologique : soutenir l’innovation du secteur du numérique pour capter la valeur ajoutée de l’économie numérique au profit de son territoire et de l’ensemble de ses secteurs d’activité. Cette ambition se décline notamment au travers des programmes DW 4 Startups, DW International, Tech & Recherche, Digital 4 Circular de la stratégie numérique Digital Wallonia."
+      },
+      "d4w:publishedDate": {
+        "@type": "xsd:dateTime",
+        "@value": "2015-12-10T18:00:00"
+      },
+      "d4w:slug": {
+        "@language": "fr",
+        "@value": "ambition-innovation-numerique"
+      },
+      "d4w:title": {
+        "@language": "fr",
+        "@value": "Stratégie Digital Wallonia. Ambition   \"Innovation Numérique\""
+      },
+      "d4w:type": "Feature article"
+    },
+    {
       "@id": "ex:qualifiedperson-467jZ0W6wU9D0mCz88uSMr",
       "@type": "QualifiedPerson",
       "d4w:emailAddress": "rene.magritte@cfb.be",
@@ -232,21 +295,11 @@
       }
     },
     {
-      "@id": "ex:person-74ievn1aScz6OxdfHoU9KE",
-      "@type": "Person",
-      "d4w:displayRefusal": {
-        "@type": "xsd:boolean",
-        "@value": "0"
-      },
-      "d4w:firstName": "René François Ghislain",
-      "d4w:internalName": "René François Ghislain Magritte",
-      "d4w:language": "French",
-      "d4w:featuredEmail": "rene.magritte@cfb.be",
-      "d4w:lastName": "Magritte",
-      "d4w:slug": "rene-magritte"
+      "@id": "https://images.ctfassets.net/myqv2p4gx62v/50eBYXoMo5hWNO64efkQY2/b6ee3b87892d4d96ab46bba4df578c0c/FWB_Logo.jfif?h=250",
+      "@type": "File"
     },
     {
-      "@id": "https://images.ctfassets.net/myqv2p4gx62v/50eBYXoMo5hWNO64efkQY2/b6ee3b87892d4d96ab46bba4df578c0c/FWB_Logo.jfif?h=250",
+      "@id": "https://images.ctfassets.net/myqv2p4gx62v/6g677yu7zTnGqOnYXfZoyy/995d8e82828205a3899caeb3e579cc42/Picto_InnovationNumerique.svg",
       "@type": "File"
     }
   ]
