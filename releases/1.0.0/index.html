@@ -198,7 +198,7 @@ D4WMO-AP provides a minimal common basis within Data4Wallonia to describe a mode
 		  This specification </span> of <a rel="cc:attributionURL" property="cc:attributionName" href="ORGANISATION" xmlns:cc="http://creativecommons.org/ns#">ORGANISATION </a> 
 	          is published under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">"CC0"</a>.
 	-->
-             Copyright © 2024 Agence Du Numérique. All material in this repository is published under the license CC-BY 4.0, unless explicitly otherwise mentioned.
+             Copyright © 2024 Agence Du Numérique. All material in this repository is published under the license <a href="https://creativecommons.org/licenses/by/4.0/deed.en">CC-BY 4.0</a>, unless explicitly otherwise mentioned.
         </p>
     
 </section>
@@ -281,7 +281,7 @@ This specification uses the following prefixes to shorten the URIs for readabili
                         <p>
                             And supported by these datatypes:
                             <br />
-                            | <a href="#Boolean">Boolean</a> | <a href="#Code">Code</a> | <a href="#Datetime">Date time</a> | <a href="#Decimal">Decimal</a> | <a href="#gYear">gYear</a> | <a href="#Integer">Integer</a> | <a href="#String">String</a> | <a href="#Text">Text</a> |
+                            | <a href="#Boolean">Boolean</a> | <a href="#Code">Code</a> | <a href="#Date">Date</a> | <a href="#Datetime">Date time</a> | <a href="#Decimal">Decimal</a> | <a href="#gYear">gYear</a> | <a href="#Integer">Integer</a> | <a href="#String">String</a> | <a href="#Text">Text</a> |
                         </p>
                 
     </div>
@@ -3356,7 +3356,7 @@ The main entities are those that form the core of the Application Profile.
                                     
                                 </td>
                                 <td>
-                                    1..*
+                                    1
                                 </td>
                                 <td property="rdfs:comment">
                                     A type
@@ -6260,6 +6260,7 @@ The main entities are those that form the core of the Application Profile.
                             , <a href="#Profile.belgianenterprise">belgian enterprise</a>
                             , <a href="#Profile.category">category</a>
                             , <a href="#Profile.clientsite">client site</a>
+                            , <a href="#Profile.companyvalidationdate">company validation date</a>
                             , <a href="#Profile.email">email</a>
                             , <a href="#Profile.featuredperson">featured person</a>
                             , <a href="#Profile.founder">founder</a>
@@ -6563,6 +6564,49 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                                 <td property="rdfs:comment">
                                     A client site
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="Profile.companyvalidationdate"
+                                typeof="rdfs:Property"
+                                resource="http://data4wallonia.com/resource/model/companyValidationDate"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20company validation date%20in%20Profile&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Profile.companyvalidationdate" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data4wallonia.com/resource/model/companyValidationDate"
+                                           data-toggle="tooltip"
+                                           data-content="http://data4wallonia.com/resource/model/companyValidationDate"
+                                           data-placement="right">
+                                        company validation date</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Date" data-placement="right">Date</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    Date of last contact with the company validating the information.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -7492,7 +7536,6 @@ The main entities are those that form the core of the Application Profile.
                             , <a href="#Program.popularizedtitle">popularized title</a>
                             , <a href="#Program.referencecategory">reference category</a>
                             , <a href="#Program.referencewebsite">reference web site</a>
-                            , <a href="#Program.referencePost">referencePost</a>
                             , <a href="#Program.shortdescription">short description</a>
                             , <a href="#Program.slug">slug</a>
                             , <a href="#Program.sticky">sticky</a>
@@ -8124,49 +8167,6 @@ The main entities are those that form the core of the Application Profile.
                                 </td>
                                 <td property="rdfs:comment">
                                     A reference web site
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Program.referencePost"
-                                typeof="rdfs:Property"
-                                resource="http://data4wallonia.com/resource/model/referencePost"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20referencePost%20in%20Program&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Program.referencePost" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data4wallonia.com/resource/model/referencePost"
-                                           data-toggle="tooltip"
-                                           data-content="http://data4wallonia.com/resource/model/referencePost"
-                                           data-placement="right">
-                                        referencePost</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Post" data-placement="right">Post</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..1
-                                </td>
-                                <td property="rdfs:comment">
-                                    A reference post
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -10680,7 +10680,7 @@ They are included in the Application Profile because they form the range of prop
                                 <td>
                                     
                                         
-                                            <a href="#Integer" data-placement="right">Integer</a>
+                                            <a href="#Decimal" data-placement="right">Decimal</a>
                                         
                                     
                                 </td>
@@ -11227,7 +11227,7 @@ They are included in the Application Profile because they form the range of prop
                         
                             <tr id="Category.isfeaturedonprofilessearchDW"
                                 typeof="rdfs:Property"
-                                resource="om/resource/model/isFeaturedOnProfilesSearchDW"
+                                resource="http://data4wallonia.com/resource/model/isFeaturedOnProfilesSearchDW"
                                 class="class mandatory">
                                 <td>
 				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20is featured on profiles search DW%20in%20Category&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Category.isfeaturedonprofilessearchDW" target="_blank" rel="noopener noreferrer" >
@@ -11236,9 +11236,9 @@ They are included in the Application Profile because they form the range of prop
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="om/resource/model/isFeaturedOnProfilesSearchDW"
+                                        <a href="http://data4wallonia.com/resource/model/isFeaturedOnProfilesSearchDW"
                                            data-toggle="tooltip"
-                                           data-content="om/resource/model/isFeaturedOnProfilesSearchDW"
+                                           data-content="http://data4wallonia.com/resource/model/isFeaturedOnProfilesSearchDW"
                                            data-placement="right">
                                         is featured on profiles search DW</a>
                                 </td>
@@ -11270,7 +11270,7 @@ They are included in the Application Profile because they form the range of prop
                         
                             <tr id="Category.isprofilesfilteronprogramDW"
                                 typeof="rdfs:Property"
-                                resource="om/resource/model/isProfilesFilterOnProgramDW"
+                                resource="http://data4wallonia.com/resource/model/isProfilesFilterOnProgramDW"
                                 class="class mandatory">
                                 <td>
 				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20is profiles filter on program DW%20in%20Category&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Category.isprofilesfilteronprogramDW" target="_blank" rel="noopener noreferrer" >
@@ -11279,9 +11279,9 @@ They are included in the Application Profile because they form the range of prop
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="om/resource/model/isProfilesFilterOnProgramDW"
+                                        <a href="http://data4wallonia.com/resource/model/isProfilesFilterOnProgramDW"
                                            data-toggle="tooltip"
-                                           data-content="om/resource/model/isProfilesFilterOnProgramDW"
+                                           data-content="http://data4wallonia.com/resource/model/isProfilesFilterOnProgramDW"
                                            data-placement="right">
                                         is profiles filter on program DW</a>
                                 </td>
@@ -11356,7 +11356,7 @@ They are included in the Application Profile because they form the range of prop
                         
                             <tr id="Category.slug"
                                 typeof="rdfs:Property"
-                                resource="http://purl.org/dc/terms/identifier"
+                                resource="http://data4wallonia.com/resource/model/slug"
                                 class="class mandatory">
                                 <td>
 				    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20slug%20in%20Category&body=Explain%20your%20issue%20for%20https://DigitalWallonia.github.io/D4WMO-AP-ASIS/releases/1.0.0/%23Category.slug" target="_blank" rel="noopener noreferrer" >
@@ -11365,9 +11365,9 @@ They are included in the Application Profile because they form the range of prop
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://purl.org/dc/terms/identifier"
+                                        <a href="http://data4wallonia.com/resource/model/slug"
                                            data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/identifier"
+                                           data-content="http://data4wallonia.com/resource/model/slug"
                                            data-placement="right">
                                         slug</a>
                                 </td>
@@ -11948,6 +11948,22 @@ Labels should not contain special characters such as & ( ) \ or /.
                 
 		</td><td>
                     An idea or notion; a unit of thought.
+		</td></tr>
+		<tr><td>
+                   <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20Date&body=Explain%20your%20issue"}}>
+                     <img src="html/callout.png" loading="lazy" alt="(create issue)" width="50" height="50"/>
+		   </a>
+		</td><td>
+                
+                    <div id="Date">
+                        <a href="http://www.w3.org/2001/XMLSchema#date"
+                           data-toggle="tooltip"
+                           data-content="http://www.w3.org/2001/XMLSchema#date"
+                           data-placement="right">Date</a>
+                    </div>
+                
+		</td><td>
+                    The ·value space· of date consists of top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day (in each timezone), i.e. &#39;00:00:00&#39;, up to but not including &#39;24:00:00&#39; (which is identical with &#39;00:00:00&#39; of the next day). For nontimezoned values, the top-open intervals disjointly cover the nontimezoned timeline, one per day. For timezoned values, the intervals begin at every minute and therefore overlap.
 		</td></tr>
 		<tr><td>
                    <a href="https://github.com/DigitalWallonia/D4WMO-AP-ASIS/issues/new?title=Issue%20for%20DateTime&body=Explain%20your%20issue"}}>
@@ -13155,7 +13171,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></td>
 								<td></td>
 								<td><a href="#Category.isfeaturedonprofilessearchDW">is featured on profiles search DW </a></td>
-								<td><div class="shorten">om/resource/model/isFeaturedOnProfilesSearchDW</div></td>
+								<td><div class="shorten">http://data4wallonia.com/resource/model/isFeaturedOnProfilesSearchDW</div></td>
 							</tr>
 						
 					
@@ -13165,7 +13181,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></td>
 								<td></td>
 								<td><a href="#Category.isprofilesfilteronprogramDW">is profiles filter on program DW </a></td>
-								<td><div class="shorten">om/resource/model/isProfilesFilterOnProgramDW</div></td>
+								<td><div class="shorten">http://data4wallonia.com/resource/model/isProfilesFilterOnProgramDW</div></td>
 							</tr>
 						
 					
@@ -13185,7 +13201,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></td>
 								<td></td>
 								<td><a href="#Category.slug">slug </a></td>
-								<td><div class="shorten">http://purl.org/dc/terms/identifier</div></td>
+								<td><div class="shorten">http://data4wallonia.com/resource/model/slug</div></td>
 							</tr>
 						
 					
@@ -14569,6 +14585,10 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
+						
+					
+					
+						
 					
 						
 					
@@ -14680,6 +14700,16 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Profile.clientsite">client site </a></td>
 								<td><div class="shorten">http://data4wallonia.com/resource/model/clientSite</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Profile">Profile</a></td>
+								<td><div class="shorten">http://data4wallonia.com/resource/model/Profile</div></td>
+								<td></td>
+								<td><a href="#Profile.companyvalidationdate">company validation date </a></td>
+								<td><div class="shorten">http://data4wallonia.com/resource/model/companyValidationDate</div></td>
 							</tr>
 						
 					
@@ -14924,10 +14954,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 					
-						
-					
-					
-						
 					
 						
 					
@@ -15103,16 +15129,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td></td>
 								<td><a href="#Program.referencewebsite">reference web site </a></td>
 								<td><div class="shorten">http://data4wallonia.com/resource/model/referenceWebSite</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Program">Program</a></td>
-								<td><div class="shorten">http://data4wallonia.com/resource/model/Program</div></td>
-								<td></td>
-								<td><a href="#Program.referencePost">referencePost </a></td>
-								<td><div class="shorten">http://data4wallonia.com/resource/model/referencePost</div></td>
 							</tr>
 						
 					

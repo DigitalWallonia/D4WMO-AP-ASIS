@@ -19,6 +19,7 @@
   <xs:element name="ServicesPlace" type="ServicesPlaceType"/>
   <xs:element name="Text" type="TextType"/>
   <xs:element name="Boolean" type="BooleanType"/>
+  <xs:element name="Date" type="DateType"/>
   <xs:element name="DateTime" type="DateTimeType"/>
   <xs:element name="Decimal" type="DecimalType"/>
   <xs:element name="GYear" type="GYearType"/>
@@ -346,7 +347,7 @@
   </xs:complexType>
   <xs:complexType name="AnnualBudgetType">
     <xs:sequence>
-      <xs:element name="budget" type="xs:integer" maxOccurs="1" minOccurs="1">
+      <xs:element name="budget" type="xs:decimal" maxOccurs="1" minOccurs="1">
         <xs:annotation>
           <xs:documentation xml:lang="en">A budget</xs:documentation>
         </xs:annotation>
@@ -538,7 +539,7 @@
           <xs:documentation xml:lang="en">A title</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="type" type="xs:string" maxOccurs="unbounded" minOccurs="1">
+      <xs:element name="type" type="xs:string" maxOccurs="1" minOccurs="1">
         <xs:annotation>
           <xs:documentation xml:lang="en">A type</xs:documentation>
         </xs:annotation>
@@ -936,6 +937,11 @@
           <xs:documentation xml:lang="en">A client site</xs:documentation>
         </xs:annotation>
       </xs:element>
+      <xs:element name="companyValidationDate" type="xs:date" maxOccurs="1" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Date of last contact with the company validating the information.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="email" type="xs:string" maxOccurs="1" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">An email</xs:documentation>
@@ -1108,11 +1114,6 @@
       <xs:element name="referenceCategory" type="ConceptType" maxOccurs="1" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A reference category</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="referencePost" ref="PostType" maxOccurs="1" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A reference post</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="referenceWebSite" type="xs:string" maxOccurs="1" minOccurs="0">
@@ -1323,6 +1324,14 @@
     <xs:attribute name="BooleanRef" type="xs:IDREF">
       <xs:annotation>
         <xs:documentation xml:lang="en">Reference to Boolean ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="DateType">
+    <xs:sequence/>
+    <xs:attribute name="DateRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to Date ID</xs:documentation>
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
